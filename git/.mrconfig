@@ -1,0 +1,12 @@
+
+[bin]
+checkout = git clone 'git@github.com:barnaby0x0/bin.git' 'bin'
+
+[.password-store]
+checkout = git clone 'git@github.com:barnaby0x0/pass.git' '.password-store'
+
+[Workspace/ansible/local]
+checkout = git clone 'git@github.com:barnaby0x0/init_system.git' 'local'
+
+[.dotfiles]
+checkout = git clone 'git@github.com:barnaby0x0/dot.git' '.dotfiles'

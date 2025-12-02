@@ -1,0 +1,5 @@
+[user]
+	email = victor@mail.com
+	name = Victor
+[status]
+	showUntrackedFiles = yes
