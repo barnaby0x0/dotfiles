@@ -40,3 +40,4 @@ stow_cmd --no-folding gnupg
 stow_cmd --no-folding bashtop
 stow_cmd --no-folding geany
 stow_cmd tmux
+stow_cmd terraform
