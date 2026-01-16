@@ -117,4 +117,10 @@ GPG_TTY=`tty`
 export GPG_TTY
 eval "$(direnv hook zsh)"
 
+#autoload -Uz run-help
+#unalias run-help # Removes the default alias run-help=man
+#alias help=run-help
 
+unalias run-help
+alias help=run-help
+autoload -Uz run-help

@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 
 " Insert or delete brackets, parens, quotes in pair
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " Comment smartly
 Plug 'preservim/nerdcommenter'
@@ -27,6 +27,7 @@ Plug 'cespare/vim-toml', {'for':'toml'}
 Plug 'hashivim/vim-vagrant', {'for':['vagrant','Vagrantfile']}
 Plug 'stephpy/vim-yaml', {'for':['yaml', 'yml']}
 Plug 'jamessan/vim-gnupg'
+" Plug 'chamindra/marvim'
 
 call plug#end()
 
@@ -46,6 +47,7 @@ filetype on
 filetype plugin indent on
 set background=dark
 set number
+set relativenumber
 set nobackup
 set nocompatible
 set cursorline
@@ -100,7 +102,7 @@ let g:WebDevIconsUnicodeDecorateFolderNodes=1
 let mapleader = ','
 
 " Toggle IDE mode in VIM
-nmap <C-i> :GitGutterEnable<cr>:NERDTreeFind<cr>
+" nmap <C-i> :GitGutterEnable<cr>:NERDTreeFind<cr>
 
 " Toggle GitGutter
 nmap <C-g> :GitGutterEnable<cr>
@@ -138,3 +140,6 @@ augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
 augroup END
+
+" macros
+let @a = "ggi#! /bin/bash\n\n"
