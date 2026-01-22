@@ -47,7 +47,7 @@ filetype on
 filetype plugin indent on
 set background=dark
 set number
-set relativenumber
+" set relativenumber
 set nobackup
 set nocompatible
 set cursorline
